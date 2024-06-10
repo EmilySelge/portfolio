@@ -1,0 +1,395 @@
+* {
+    font-family: 'Khand', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #061225;
+    overscroll-behavior: none;  
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+nav {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    padding: 0 2rem;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight:    bold;
+}
+
+
+
+.mobile-menu {
+    display: none;
+}
+
+.nav-btn {
+    display: none;
+}
+
+
+
+.home-section {
+    min-height: 100dvh;
+    background-size: cover;
+    background-image: url(background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.home-div {
+    text-align: center;
+    margin-top: 12rem;
+    padding: 0 8rem;
+}
+
+
+a {
+    color: aliceblue;
+}
+
+
+.home-h1 {
+    font-size: 72px;
+    font-family: 'Array', sans-serif;
+    color: aliceblue;
+    line-height: 72px; 
+}
+
+
+.home-p {
+    font-weight: 700;
+    font-size: larger;
+}
+
+h1 {
+    font-size: 72px;
+    font-family: 'Array', sans-serif;
+    color: aliceblue;
+    
+}
+
+h2 {
+    color: aliceblue;
+}
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+
+.about-section {
+    padding: 6rem 4rem 8rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.about-div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.about-p {
+    width: 50dvw;
+}
+
+.projects-section {
+    padding: 2rem 4rem 10rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-div {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4rem 0 0 0;
+    gap: 4vw;
+    justify-items: start;
+    justify-content: space-evenly;
+}
+
+.project {
+    text-align: left;
+    padding: 2rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    box-shadow: #5D61C6 0px 0px 0px 3px inset, aliceblue 10px 10px 0px -3px, #494EC6 10px 10px, aliceblue 20px 20px 0px -3px,   #494EC6 20px 20px;
+}
+
+.project-name {
+    color: #5D61C6
+}
+
+
+.project-p {
+    font-size: medium;
+    color: #061225;
+}
+
+.project-btn {
+    background-color: #494EC6;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 5%;
+    box-shadow: gainsboro 2px 2px 2px;
+    text-decoration: none;
+}
+
+.skills-div {
+    width: 40dvw;
+    margin-left: 8rem;
+}
+
+.skills {
+    margin-top: 4rem;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2rem, 5rem));
+    grid-template-rows: repeat(auto-fill, minmax(2rem, 5rem));
+    margin: 4rem 0 0 0;
+    gap: 3rem;
+    justify-items: start;
+    justify-content: space-evenly;
+}
+
+.about-text {
+    text-wrap: pretty;
+}
+
+.skill {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.skills-h2 {
+    color: #BFADDB;
+}
+
+
+
+.contact-section {
+    color: #061225;
+  
+}
+
+.contact-div {
+    padding: 4rem;
+    margin: 4rem;
+    border-radius: 2rem;
+    background-color: aliceblue;
+    border: solid 2px #BFADDB;
+}
+
+.contact-h1 {
+    color: #BFADDB;
+}
+
+.contact-p {
+    color: #061225;
+}
+
+.material-symbols-outlined {
+    width: 3rem;
+    color: aliceblue;
+}
+
+
+
+.contact-details {
+    margin-top: 2rem;
+    
+}
+
+.contact-details-2 {
+    margin-left: 4rem;
+    
+}
+
+.contact-details-div {
+    margin-top: 4rem;
+    display: flex;
+
+}
+
+.social-icons {
+   display: flex;
+}
+
+.facebook-icon {
+    fill: #061225;
+    margin: 0 1rem;
+}
+
+.github-icon {
+    fill: #061225;
+}
+
+
+.contact-email {
+    color: #BFADDB;
+    font-weight: 700;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 0;
+    }
+
+    .nav-link {
+        display: none;
+    }
+
+
+    .mobile-a {
+        color: rgb(68, 46, 231);
+        margin: 1.5rem 0;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+
+    .home-h1 {
+        font-size: 3em;
+        line-height:normal;
+    }
+
+    .home-div {
+        margin-top: 4rem;
+        padding: 1rem 1rem 4rem 1rem;
+    }
+
+    h1 {
+
+        font-size: 3em;
+        text-align: center;
+    }
+
+
+    .nav-btn {
+        display: inline-block;
+        padding: 1rem;
+        color: #061225;
+    }
+
+   .open-mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 2rem;
+        margin: 1rem;
+        border-radius: 1rem;
+
+    }
+
+    .about-section {
+        padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-div {
+        flex-direction: column;
+    }
+   
+
+    .about-h1 {
+        line-height: normal;
+    }
+
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(2rem, 5rem));
+        grid-template-rows: repeat(auto-fill, minmax(2rem, 5rem));
+        margin: 4rem 0 0 0;
+        gap: 3rem;
+        justify-items: start;
+        justify-content: space-evenly;
+        
+    }
+
+    .skills-div {
+        margin: 4rem 0 0 0;
+        width: auto;
+    }
+
+    .skill {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-p {
+        width: auto;
+    }
+
+
+
+    .projects-section {
+        padding: 6rem 2rem;
+    }
+
+
+
+    .projects-div {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem 0 0 0;
+        gap: 4rem;
+        text-wrap: balance;
+    }
+
+    .contact-div {
+        padding: 1rem;
+        margin: 0;
+        border-radius: 1rem;
+    }
+    
+    .contact-section {
+        padding: 1rem;
+    }
+
+    .contact-details-div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contact-details-2 {
+        margin-left: 0;
+    }
+
+}
+
